@@ -62,6 +62,7 @@ npx tsc --init
 ```json
 {
   "compilerOptions": {
+    "allowJs": true,
     "rootDir": "./src",
     "outDir": "./build/js",
     "target": "ES2015",
@@ -75,4 +76,17 @@ npx tsc --init
   },
   "include": ["./src/**/*.ts"]
 }
+```
+
+### 각종 라이브러리 설치 방법
+
+```bash
+// Express
+yarn add express
+yarn add @types/express --dev
+
+// 몽고DB - 몽공DB는 자체적으로 타입 정의를 제공
+yarn add mongodb@4
+
+
 ```

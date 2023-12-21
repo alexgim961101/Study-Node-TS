@@ -14,7 +14,7 @@
     "@types/express": "^4.17.21"
   },
   "scripts": {
-    "buildAndRun": "npx tsc; node ./build/js/index.js",
+    "buildAndRun": "rm -rf ./build/js/**; npx tsc; node ./build/js/index.js",
     "build": "npx tsc --watch",
     "dev": "nodemon --watch ./src/index.ts"
   }
