@@ -50,5 +50,21 @@ npx tsc --init
 ```
 #### 기본 설정
 ```json
-
+{
+    "compilerOptions": {
+        "rootDir": "./src",
+        "outDir": "./build/js",
+        "target": "ES2015",
+        "noEmitOnError": true,
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "esModuleInterop": true,
+        "lib": ["ESNext", "DOM"],
+        "strict": true,
+        "strictNullChecks": true
+    },
+    "include": [
+        "./src/**/*.ts"
+    ]
+}
 ```
