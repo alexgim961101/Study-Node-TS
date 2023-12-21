@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+      "rootDir": "./src",
+      "outDir": "./build/js",          // 폴더가 존재해야 빌드 파일이 해당 폴더로 이동함
+      "allowJs": true,                 // js파일이 ts 컴파일러에 들어가게 될 경우 그대로 빌드 폴더에 복사해서 넘겨줌
+      "target": "ES2015",
+      "noEmitOnError": true,
+      "module": "ESNext",
+      "moduleResolution": "Node",
+      "esModuleInterop": true,
+      "lib": ["ESNext", "DOM"],
+      "strict": true,
+      "strictNullChecks": true
+  },
+  "include": [
+      "./src/**/*.*"
+  ]
+}
