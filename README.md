@@ -67,7 +67,7 @@ npx tsc --init
     "outDir": "./build/js",
     "target": "ES2015",
     "noEmitOnError": true,
-    "module": "ESNext",
+    "module": "CommonJS",
     "moduleResolution": "Node",
     "esModuleInterop": true,
     "lib": ["ESNext", "DOM"],
